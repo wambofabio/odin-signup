@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+.app {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
+
+.left {
+  flex-grow: 1;
+  position: relative;
+  width: 60vw;
+  min-width: 345px;
+  height: 100vh;
+  background-color: #68a07a;
+  background-image: url("coffeedark.jpg");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* This will align the content to the top */
+  align-items: center; /* This will center the content horizontally */
+  padding-top: 10%;
+}
+
+.left-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.odinlogo {
+  width: 10rem;
+  padding: 10px;
+  color: black;
+}
+
+.left-content h1 {
+  color: white;
+  font-size: 5rem;
+  font-weight: 400;
+}
+
+.right {
+  flex-grow: 3;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.row1,
+.row2,
+.row3 {
+  /* Outset shadow */
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.3),
+    -4px -4px 15px rgba(255, 255, 255, 0.9);
+
+  /* If you also want an inset shadow */
+  box-shadow: inset 2px 2px 10px rgba(0, 0, 0, 0.2),
+    inset -2px -2px 10px rgba(255, 255, 255, 0.7);
+}
+
+.row1,
+.row3 {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.row1 {
+  background-color: rgb(252, 252, 243);
+}
+
+.row1 h1 {
+  font-size: 2rem;
+  font-weight: 400;
+  padding-top: 15px;
+  padding-left: 15px;
+}
+
+.row2 {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(247, 247, 235);
+  padding-left: 15px;
+}
+.input-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.form1,
+.form2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.form1,
+.form2 {
+  flex-direction: row;
+  justify-content: space-;
+}
+
+.form1 > div,
+.form2 > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+
+.form1 label,
+.form2 label,
+.form1 input,
+.form2 input {
+  width: 80%;
+  margin-bottom: 10px;
+}
+
+.form2 label {
+  white-space: nowrap;
+}
+
+/* Increase font size for labels and inputs */
+.form1 label,
+.form2 label,
+.form1 input,
+.form2 input {
+  font-size: 1.5rem; /* Adjust as needed */
+}
+
+/* Increase size of input fields */
+.form1 input,
+.form2 input {
+  padding: 10px 15px; /* Adjust as needed */
+  width: 90%; /* Adjust as needed */
+}
+
+.row3 {
+  background-color: rgb(252, 252, 243);
+}
+#uploadButton {
+  padding: 10px 20px;
+  font-size: 1.6rem;
+  background-color: rgb(247, 247, 235);
+  border: black solid 1px;
+  color: black;
+  cursor: pointer;
+  border-radius: 7px;
+  margin-top: 20px;
+}
+
+.row3 > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.row3 > div > p {
+  padding-top: 5px;
+}
